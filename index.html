@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Two tables and header with jspdf-autotable</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+  <button onclick="generate_cutomPDF()">Generate PDF</button>
+
+<table id="basic-table" style="display: none;">
+  <thead>
+    <tr>
+      <th width="5%">Product</th>
+      <th>HSN/SAC</th>
+      <th>Rate/Item</th>
+      <th>Qty</th>
+      <th>Discount</th>
+      <th>Taxable Value</th>
+      <th>CGST</th>
+      <th>SGST</th>
+      <th>IGST</th>
+      <th>CESS</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="5%" align="right">1. FAST BLACK Hair Dye Shampoo 15ml<br>HSNCODE: 33059040</td>
+      <td>68054125</td>
+      <td>2400</td>
+      <td>20</td>
+      <td>12</td>
+      <td>12000</td>
+      <td>240</td>
+      <td>240</td>
+      <td>0</td>
+      <td>0</td>
+      <td>192500</td>
+    </tr>
+    <tr>
+      <td width="5%" align="right">2. FAST BLACK Hair Dye Shampoo 15ml<br>HSNCODE: 33059040</td>
+      <td>68054125</td>
+      <td>2400</td>
+      <td>20</td>
+      <td>12</td>
+      <td>12000</td>
+      <td>240</td>
+      <td>240</td>
+      <td>0</td>
+      <td>0</td>
+      <td>192500</td>
+    </tr>
+    <tr>
+      <td width="5%" align="right">2. item 2</td>
+      <td>68054125</td>
+      <td>2400</td>
+      <td>20</td>
+      <td>12</td>
+      <td>12000</td>
+      <td>240</td>
+      <td>240</td>
+      <td>0</td>
+      <td>0</td>
+      <td>192500</td>
+    </tr>
+    <tr>
+      <td width="10%" align="right">2. item 2</td>
+      <td>68054125</td>
+      <td>2400</td>
+      <td>20</td>
+      <td>12</td>
+      <td>12000</td>
+      <td>240</td>
+      <td>240</td>
+      <td>0</td>
+      <td>0</td>
+      <td>192500</td>
+    </tr>
+     
+     
+  </tbody>
+</table>
+
+<table id="tblInvoiceItemsList" class="ks-table">
+    <thead>
+        <tr>
+             
+            <th>Product</th>
+            <th class="ks-subtotal">Qty</th>
+            <th class="ks-subtotal">Rate/Item</th>
+            <th class="ks-subtotal">Disct</th>
+            <th width="100" class="ks-subtotal">Subtotal</th>
+            <th class="ks-subtotal">CGST</th>
+            <th class="ks-subtotal">SGST</th>
+            <th class="ks-subtotal">IGST</th>
+            <th class="ks-subtotal">CESS</th>
+            <th width="100" class="ks-subtotal">Total</th>
+        </tr>
+    </thead>
+    <tbody><tr><td>1. SAMSUNG GALAXY S8 PLUS 64GB <br>HSNCODE: 330896040</td><td class="ks-subtotal">480</td><td class="ks-subtotal">24.61</td><td class="ks-subtotal">0</td><td class="ks-subtotal">11812.8</td><td class="ks-subtotal">14</td><td class="ks-subtotal">14</td><td class="ks-subtotal">0</td><td class="ks-subtotal">0</td><td class="ks-subtotal">15120.38</td></tr></tbody>
+    <tfoot><tr><th></th>
+      <th class="ks-subtotal"></th>
+      <th class="text-center">Total</th> <th class="ks-subtotal">0.00</th><th class="ks-subtotal">11812.80</th><th class="ks-subtotal">1653.79</th><th class="ks-subtotal">1653.79</th><th class="ks-subtotal">0.00</th><th class="ks-subtotal">0.00</th><th class="ks-subtotal">15120.38</th></tr></tfoot>
+</table>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <!-- <script src='https://cdn.rawgit.com/simonbengtsson/jsPDF/requirejs-fix-dist/dist/jspdf.debug.js'></script> -->
+<!-- <script src='https://unpkg.com/jspdf-autotable@2.3.2'></script> -->
+<script  src="js/jspdf.min.js"></script>
+<script  src="js/index.js"></script>
+<script  src="js/jspdf.plugin.autotable.js"></script>
+<script  src="js/jsPdf_Plugins.js"></script>
+
+
+</body>
+</html>
