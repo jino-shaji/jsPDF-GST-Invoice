@@ -481,7 +481,7 @@ function generate_cutomPDF_landscape() {
     doc.setFontType('bold');
     
     //pdf.addImage(agency_logo.src, 'PNG', logo_sizes.centered_x, _y, logo_sizes.w, logo_sizes.h);
-    doc.addImage(company_logo.srcl, 'PNG', startX,startY+=50, company_logo.w,company_logo.h);
+    doc.addImage(company_logo.src, 'PNG', startX,startY+=50, company_logo.w,company_logo.h);
 
     doc.textAlign(comapnyJSON.CompanyName, {align: "left"}, startX, startY+=15+company_logo.h);
     doc.setFontSize(fontSizes.NormalFontSize);
